@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivSymbol"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pdimg"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ivSymbol"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint=" Username"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/etUsername"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint=" Password"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/etPassword"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="30dp"
+            android:text="LOG IN"
+            android:textSize="24sp"
+            app:backgroundTint="#8b0000">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:text="Create your account!!"
+            android:textColor="#8b0000"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
