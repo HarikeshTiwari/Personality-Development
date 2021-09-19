@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AboutUs">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnExplore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_explore" />
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/btnExplore"
+        android:background="@drawable/ic_about" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_toRightOf="@id/btnAboutUs"
+        android:background="@drawable/ic_account_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

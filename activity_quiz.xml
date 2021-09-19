@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome User!"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvMessage"
+        android:gravity="center"
+        android:text="Welcome User!"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@+id/tvOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        android:text="Do you want to submit this Quiz"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/tvOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"/>
+    <Button
+        android:id="@+id/btnYes"
+        android:text="YES"
+        android:background="@drawable/bgtime"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnNo"
+        android:text="NO"
+        android:background="@drawable/bgtime"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvSubmit"
+        android:layout_toRightOf="@+id/btnYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/progressIndicator"
+        android:layout_marginTop="135dp"
+        android:layout_below="@+id/tvOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/tvOption1"
+        android:layout_below="@id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:gravity="start"
+        android:text="Welcome User!"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/tvOption2"
+        android:gravity="start"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/tvOption1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome User!"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/tvOption3"
+        android:gravity="start"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/tvOption2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome User!"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/tvOption4"
+        android:gravity="start"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/tvOption3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome User!"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <ImageButton
+        android:id="@+id/imgBack"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvOption4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/imgForward"
+        android:src="@drawable/ic_forward"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imgBack"
+        android:layout_below="@+id/tvOption4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnTime"
+        android:textColor="@color/white"
+        android:background="@drawable/bgtime"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/imgBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

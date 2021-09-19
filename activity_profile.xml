@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:text="Harikesh Tiwari"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvAccount"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvStream"
+        android:text="Science"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvAccount"
+        android:text="Account Information"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnUsername"
+        android:drawableLeft="@drawable/ic_username"
+        android:scaleType="fitStart"
+        android:text="Username"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:paddingStart="1dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvAccount"/>
+    <Button
+        android:id="@+id/btnPassword"
+        android:drawableLeft="@drawable/ic_password"
+        android:scaleType="fitStart"
+        android:text="Password"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:paddingStart="1dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnUsername"/>
+
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:text="Apps and Settings"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/btnPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnLogout"
+        android:drawableLeft="@drawable/ic_logout"
+        android:scaleType="fitStart"
+        android:text="Log Out"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:paddingStart="1dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvSettings"/>
+
+
+
+    <Button
+        android:id="@+id/btnExplore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_explore" />
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_toRightOf="@+id/btnExplore"
+        android:background="@drawable/ic_about"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_toRightOf="@id/btnAboutUs"
+        android:background="@drawable/ic_account_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>
